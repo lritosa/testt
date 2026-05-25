@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: prvi_korak
-        run: echo "Trigger - ${{ github.event_name }}, user - ${{ github.actor }}, date - ${{ date }}"
+        run: echo "Trigger - ${{ github.event_name }}, user - ${{ github.actor }}, date - $(date)"
