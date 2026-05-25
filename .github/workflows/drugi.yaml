@@ -11,4 +11,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+          header: ""
+          subhead: ""
           footer: "Last issue closed by: ${{ github.actor }}"
