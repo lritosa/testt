@@ -1,13 +1,12 @@
 name: primjer
-on: 
-	label: 
-		types: [created]
-	issues:
-		types: [opened]
-
+on:
+  label:
+    types: [created]
+  issues:
+    types: [opened]
 jobs:
-	posao:
-		runs-on: ubuntu-latest
-		steps:
-			- name: prvi_korak
-			  run: echo "Trigger - ${{ github.event_name }}, user - ${{ github.actor }}, date - ${{ date }}"
+  posao:
+    runs-on: ubuntu-latest
+    steps:
+      - name: prvi_korak
+        run: echo "Trigger - ${{ github.event_name }}, user - ${{ github.actor }}, date - ${{ date }}"
